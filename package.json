@@ -1,0 +1,36 @@
+{
+  "name": "More-Places-Service",
+  "version": "1.0.0",
+  "description": "More places to stay component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostInCamelCase/More-Places-Service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostInCamelCase/More-Places-Service/issues"
+  },
+  "homepage": "https://github.com/lostInCamelCase/More-Places-Service#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "react": "^16.13.1",
+    "sequelize": "^6.3.4"
+  }
+}
