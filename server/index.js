@@ -20,7 +20,7 @@ app.get('/properties', (req, res) => {
 });
 
 app.post('/properties', (req, res) => {
-
+  console.log('hi');
 });
 
 app.get('/lists', (req, res) => {
