@@ -4,8 +4,7 @@ import App from '../components/App.jsx';
 
 describe('App', () => {
   it('should render correctly with no props', () => {
-    const component = shallow(<App/>);
-
-    expect(component).toMatchSnapshot();
+    const wrapper = shallow(<App/>);
+    expect(wrapper).toMatchSnapshot();
   });
 });
