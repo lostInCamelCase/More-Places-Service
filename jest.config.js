@@ -32,5 +32,11 @@ module.exports = {
   // Indicates whether each individual test should be reported during the run
   verbose: false,
 
-  moduleNameMapper: { "\\.css$": "identity-obj-proxy" }
+  moduleNameMapper: { "\\.css$": "identity-obj-proxy" },
+
+  collectCoverageFrom: [
+    "**/*.{js,jsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ]
 };
