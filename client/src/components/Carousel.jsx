@@ -6,7 +6,7 @@ var Carousel = (props) => {
   return (
     <div className={styles.container}>
       {props.properties.map((currentProperty) => {
-        return <Property details={currentProperty}/>
+        return <Property details={currentProperty} />
       })}
     </div>
   )

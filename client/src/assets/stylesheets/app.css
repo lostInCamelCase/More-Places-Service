@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.buttonboard {
+  margin: 20px;
+  border: 2px solid black;
+  height: 30px;
+  justify-content: center;
+}
