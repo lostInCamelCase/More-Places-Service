@@ -1,7 +1,23 @@
 .property {
   color:black;
   border-color:#576e8f;
-  font-size: 15px;
   height: 180px;
   width: 250px;
+  font-size: 15px;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  padding-bottom: 0px;
+  margin-bottom:0px;
+  border-bottom:0px;
+}
+
+h2 {
+  position: relative;
+  top: -165px;
+  left: 0px;
+  width: 100%;
+  font-size: 15px;
 }

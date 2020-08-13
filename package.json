@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "coverage": "jest --coverage",
     "server-dev": "nodemon ./server/index.js",
     "react-dev": "webpack -w",
     "seed": "node ./database/seeder.js"
@@ -60,6 +61,8 @@
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {
       "enzymeAdapter": "react16"
-    }
+    },
+    "collectCoverage": true,
+     "coverageReporters": ["json", "html"]
   }
 }
