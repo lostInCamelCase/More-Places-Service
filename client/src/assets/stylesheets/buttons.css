@@ -5,8 +5,17 @@
 }
 
 .buttonboard {
+  display: flex;
   margin: 20px;
   border: 2px solid black;
-  height: 30px;
+  height: 45px;
   justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  border-radius: 50%;
 }
