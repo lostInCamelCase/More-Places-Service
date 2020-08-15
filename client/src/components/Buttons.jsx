@@ -4,11 +4,15 @@ import styles from '../assets/stylesheets/buttons.css';
 var Buttons = (props) => {
   return (
     <div className={styles.container}>
-      <h1>More places to stay</h1>
+      <div className={styles.title}>More places to stay</div>
       <div className={styles.buttonboard}>
         <div>{props.page} / 3</div>
-        <button onClick={props.previous}></button>
-        <button onClick={props.next}></button>
+        <button onClick={props.previous}>
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button onClick={props.next}>
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   )

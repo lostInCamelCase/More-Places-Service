@@ -4,14 +4,18 @@ import styles from '../assets/stylesheets/property.css'
 var Property = (props) => {
   return (
     <div className={styles.property}>
-      <div class="image">
-        <img src={props.image} height="150" width="250" />
-        <h2>Superhost</h2>
+      <div className={styles.image}>
+        <img src={props.image} />
+        <div className={styles.panel}>
+          <div className={styles.superhost}>SUPERHOST</div>
+          <button className={styles.save} onClick={props.save}></button>
+        </div>
       </div>
-      <div> * {props.rating} ({props.review_count})</div>
-      <div>{props.type} . {props.beds} beds</div>
-      <div>{props.name}</div>
-      <div>${props.price} / night</div>
+      <div>
+        <i class="fa fa-star" aria-hidden="true"></i> {props.rating}({props.review_count})</div>
+      <div className={styles.details}>{props.type} · {props.beds} beds</div>
+      <div className={styles.details}>{props.name}</div>
+      <div className={styles.details}>Price: <span className={styles.price}>${props.price}</span> / night</div>
     </div>
   )
 }

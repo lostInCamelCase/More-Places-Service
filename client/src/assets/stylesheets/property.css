@@ -1,15 +1,68 @@
 .property {
   color:black;
   border-color:#576e8f;
-  height: 180px;
-  width: 250px;
-  font-size: 15px;
+  height: 300px;
+  width: 275px;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
 }
 
-h2 {
+.image {
+  width: 275px;
+  height: 185px;
+}
+
+img {
+  border-radius: 5px;
+  height: 175px;
+  width: 275px;
+}
+
+.panel {
   position: relative;
-  top: -165px;
-  left: 0px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  top: -170px;
+}
+
+.superhost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 25px;
+  left: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+  box-shadow: 1px 1px 1px black;
+}
+
+.save {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  margin-left: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.reviews {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+
+.details {
+  font-family: Arial, sans-serif;
   font-size: 15px;
+  margin: 2px 0px;
+}
+
+.price {
+  font-weight: 900;
 }

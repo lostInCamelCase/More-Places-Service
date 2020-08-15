@@ -1,21 +1,28 @@
 .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 75px;
+  height: 45px;
+  width: 92%;
+  margin-bottom: 10px;
 }
 
 .buttonboard {
   display: flex;
-  margin: 20px;
-  border: 2px solid black;
-  height: 45px;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 45px;
+}
+
+.title {
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500px;
 }
 
 button {
-  width: 40px;
-  height: 40px;
-  margin: 2px;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
   border-radius: 50%;
 }

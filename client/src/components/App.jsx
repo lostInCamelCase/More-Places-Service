@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import styles from '../assets/stylesheets/app.css'
 import Buttons from './Buttons.jsx'
 import Carousel from './Carousel.jsx';
 
@@ -55,12 +56,16 @@ class App extends React.Component {
     this.setState({ currentProperties: this.state.properties.slice((this.state.page * 4) - 4, (this.state.page * 4)) });
   }
 
+  save() {
+    console.log('saved!');
+  }
+
 
   render() {
     return (
-      <div>
+      <div className={styles.frame}>
         <Buttons page={this.state.page} previous={this.previousButton.bind(this)} next={this.nextButton.bind(this)} />
-        <Carousel properties={this.state.currentProperties} />
+        <Carousel properties={this.state.currentProperties} save={this.save.bind(this)}/>
       </div>
     );
   }
