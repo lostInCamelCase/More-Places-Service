@@ -35,18 +35,18 @@ img {
   height: 25px;
   left: 5px;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   background-color: white;
   border-radius: 5px;
   margin-left: 5px;
-  box-shadow: 1px 1px 1px black;
+  box-shadow: 0 0 2px black;
 }
 
 .save {
   outline: none;
   width: 30px;
   height: 30px;
-  border: 2px solid black;
+  border: 2px solid white;
   margin-left: 5px;
   border-radius: 50%;
   margin-right: 5px;

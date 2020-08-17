@@ -8,7 +8,7 @@ var Property = (props) => {
         <img src={props.image} />
         <div className={styles.panel}>
           <div className={styles.superhost}>SUPERHOST</div>
-          <button className={styles.save} onClick={props.save}></button>
+          <button className={styles.save} onClick={props.save} />
         </div>
       </div>
       <div>
