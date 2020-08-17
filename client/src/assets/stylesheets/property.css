@@ -43,6 +43,7 @@ img {
 }
 
 .save {
+  outline: none;
   width: 30px;
   height: 30px;
   border: 2px solid black;
@@ -65,4 +66,8 @@ img {
 
 .price {
   font-weight: 900;
+}
+
+.star {
+  color: #e6004c
 }

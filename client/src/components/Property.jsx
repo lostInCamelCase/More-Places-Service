@@ -12,7 +12,9 @@ var Property = (props) => {
         </div>
       </div>
       <div>
-        <i class="fa fa-star" aria-hidden="true"></i> {props.rating}({props.review_count})</div>
+        <span className={styles.star}><i class="fa fa-star" aria-hidden="true"></i> </span>
+        {props.rating}({props.review_count})
+        </div>
       <div className={styles.details}>{props.type} · {props.beds} beds</div>
       <div className={styles.details}>{props.name}</div>
       <div className={styles.details}>Price: <span className={styles.price}>${props.price}</span> / night</div>
