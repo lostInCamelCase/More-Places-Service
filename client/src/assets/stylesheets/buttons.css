@@ -20,9 +20,16 @@
   font-weight: 500px;
 }
 
-button {
+.toggleButton {
+  outline: none;
   width: 30px;
   height: 30px;
-  margin-left: 5px;
+  margin: 5px 0px 5px 15px;
+  border:none;
   border-radius: 50%;
+  box-shadow: 0 0 8px #b5b5b5;
+}
+
+.toggleButton:hover {
+  box-shadow: 0 0 8px 5px #b5b5b5;
 }

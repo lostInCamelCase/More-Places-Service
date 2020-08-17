@@ -24,6 +24,13 @@ app.post('/properties', (req, res) => {
 });
 
 app.get('/lists', (req, res) => {
+  helpers.getLists((error, response) => {
+    if (error) {
+      console.log('error:', error)
+    } else {
+      res.status(200).send(response);
+    }
+  });
 });
 
 app.post('/lists', (req, res) => {
