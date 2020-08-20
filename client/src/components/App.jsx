@@ -11,8 +11,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       properties: [],
-      lists: [],
       currentProperties: [],
+      lists: [],
       page: 1,
       modal: false
     }
