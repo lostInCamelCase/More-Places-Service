@@ -30,8 +30,10 @@ class App extends React.Component {
     };
     axios(getOptions)
       .then((response) => {
-        this.setState({ properties: response.data });
-        this.setState({ currentProperties: this.state.properties.slice(0,4) });
+        this.setState({ properties: response.data }, () => {
+          console.log(response.data[0]);
+        });
+        this.setState({ currentProperties: this.state.properties.slice(0,4)});
       })
       .catch((error) => {
         console.log('error: ', error);
@@ -74,24 +76,29 @@ class App extends React.Component {
   }
 
   showModal() {
-    this.setState({ modal: true });
+    console.log(this.state.modal);
+    this.setState({ modal: true }, () => {
+      console.log(this.state.modal);
+    });
   }
 
   hideModal() {
-    this.setState({ modal: false });
+    console.log(this.state.modal);
+    this.setState({ modal: false }, () => {
+      console.log(this.state.modal);
+    });
   }
 
   save(listName) {
-    console.log(listName);
     window.alert(`Saved to ${listName}!`);
   }
 
   render() {
     return (
       <div className={styles.frame}>
-        <Buttons page={this.state.page} previous={this.previousButton.bind(this)} next={this.nextButton.bind(this)}/>
-        <Carousel properties={this.state.currentProperties} save={this.showModal.bind(this)}/>
-        <Modal show={this.state.modal} handleClose={this.hideModal.bind(this)} lists={this.state.lists} save={this.save.bind(this)}/>
+        <Buttons page={this.state.page} previous={this.previousButton.bind(this)} next={this.nextButton.bind(this)} />
+        <Carousel properties={this.state.currentProperties} save={this.showModal.bind(this)} />
+        <Modal show={this.state.modal} handleClose={this.hideModal.bind(this)} lists={this.state.lists} save={this.save.bind(this)} />
       </div>
     );
   }
